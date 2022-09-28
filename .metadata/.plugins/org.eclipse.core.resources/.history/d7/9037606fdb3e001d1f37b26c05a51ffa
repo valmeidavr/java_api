@@ -1,0 +1,8 @@
+package com.api_teste.modelo;
+
+public class Cliente {
+	private String nome;
+	private String email;
+	private String telefone;
+	private boolean ativo = false;
+}

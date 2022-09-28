@@ -1,0 +1,14 @@
+package com.api_teste.service;
+
+import com.api_teste.modelo.Cliente;
+
+public class AtivacaoClienteService {
+	
+	private NotificacaoEmail notificador;
+	
+	public void ativar(Cliente cliente) {
+		cliente.ativar();
+		
+		notificador.notificar(Cliente, "Seu cadastro no sistema está ativo");
+	}
+}

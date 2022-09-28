@@ -1,0 +1,18 @@
+package com.api_teste.service;
+
+import org.springframework.stereotype.Component;
+
+import com.api_teste.modelo.Cliente;
+import com.api_teste.notificacao.NotificadorEmail;
+
+@Component
+public class AtivacaoClienteService {
+	
+	private NotificadorEmail notificador;
+	
+	public void ativar(Cliente cliente) {
+		cliente.ativar();
+		
+		notificador.notificar(cliente, "Seu cadastro no sistema está ativo");
+	}
+}

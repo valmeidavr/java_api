@@ -1,0 +1,10 @@
+package com.api_teste;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MeuPrimeiroController {
+	public String hello() {
+		return "Hello";
+	}
+}

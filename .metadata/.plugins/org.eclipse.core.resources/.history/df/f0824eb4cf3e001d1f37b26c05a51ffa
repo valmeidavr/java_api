@@ -1,0 +1,8 @@
+package com.api_teste;
+
+@Controller
+public class MeuPrimeiroController {
+	public String hello() {
+		return "Hello";
+	}
+}
