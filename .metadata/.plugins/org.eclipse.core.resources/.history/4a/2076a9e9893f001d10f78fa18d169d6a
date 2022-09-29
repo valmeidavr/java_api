@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import com.api_teste.modelo.Cliente;
 import com.api_teste.notificacao.NotificadorEmail;
 
-//@Component jogar a configuração do Bean na API Config Bean separado
+//@Component jogar a configuração do Bean no API Config Bean separado
 
 public class AtivacaoClienteService {
 	
