@@ -3,14 +3,14 @@ package com.api_teste.service;
 import org.springframework.stereotype.Component;
 
 import com.api_teste.modelo.Cliente;
-import com.api_teste.notificacao.Notificador;
+import com.api_teste.notificacao.NotificadorEmail;
 
 @Component
 public class AtivacaoClienteService {
 	
-	private Notificador notificador;
+	private NotificadorEmail notificador;
 	
-	public AtivacaoClienteService(Notificador notificador) {
+	public AtivacaoClienteService(NotificadorEmail notificador) {
 		this.notificador = notificador;
 		System.out.println("AtivacaoClienteService: " + notificador);
 	}
